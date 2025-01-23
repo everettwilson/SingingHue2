@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA9533062D42E39300D96BB3 /* SingingHue2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533052D42E39300D96BB3 /* SingingHue2App.swift */; };
+		DA9533082D42E39300D96BB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533072D42E39300D96BB3 /* ContentView.swift */; };
+		DA95330A2D42E39400D96BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9533092D42E39400D96BB3 /* Assets.xcassets */; };
+		DA95330D2D42E39400D96BB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA95330C2D42E39400D96BB3 /* Preview Assets.xcassets */; };
+		DA9533172D42E39400D96BB3 /* SingingHue2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533162D42E39400D96BB3 /* SingingHue2Tests.swift */; };
+		DA9533212D42E39400D96BB3 /* SingingHue2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533202D42E39400D96BB3 /* SingingHue2UITests.swift */; };
+		DA9533232D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA9533132D42E39400D96BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9532FA2D42E39300D96BB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9533012D42E39300D96BB3;
+			remoteInfo = SingingHue2;
+		};
+		DA95331D2D42E39400D96BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9532FA2D42E39300D96BB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9533012D42E39300D96BB3;
+			remoteInfo = SingingHue2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA9533022D42E39300D96BB3 /* SingingHue2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingingHue2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9533052D42E39300D96BB3 /* SingingHue2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2App.swift; sourceTree = "<group>"; };
+		DA9533072D42E39300D96BB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA9533092D42E39400D96BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA95330C2D42E39400D96BB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA9533122D42E39400D96BB3 /* SingingHue2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingingHue2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9533162D42E39400D96BB3 /* SingingHue2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2Tests.swift; sourceTree = "<group>"; };
+		DA95331C2D42E39400D96BB3 /* SingingHue2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingingHue2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9533202D42E39400D96BB3 /* SingingHue2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2UITests.swift; sourceTree = "<group>"; };
+		DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9532FF2D42E39300D96BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA95330F2D42E39400D96BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9533192D42E39400D96BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA9532F92D42E39300D96BB3 = {
+			isa = PBXGroup;
+			children = (
+				DA9533042D42E39300D96BB3 /* SingingHue2 */,
+				DA9533152D42E39400D96BB3 /* SingingHue2Tests */,
+				DA95331F2D42E39400D96BB3 /* SingingHue2UITests */,
+				DA9533032D42E39300D96BB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9533032D42E39300D96BB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9533022D42E39300D96BB3 /* SingingHue2.app */,
+				DA9533122D42E39400D96BB3 /* SingingHue2Tests.xctest */,
+				DA95331C2D42E39400D96BB3 /* SingingHue2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9533042D42E39300D96BB3 /* SingingHue2 */ = {
+			isa = PBXGroup;
+			children = (
+				DA9533052D42E39300D96BB3 /* SingingHue2App.swift */,
+				DA9533072D42E39300D96BB3 /* ContentView.swift */,
+				DA9533092D42E39400D96BB3 /* Assets.xcassets */,
+				DA95330B2D42E39400D96BB3 /* Preview Content */,
+			);
+			path = SingingHue2;
+			sourceTree = "<group>";
+		};
+		DA95330B2D42E39400D96BB3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA95330C2D42E39400D96BB3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA9533152D42E39400D96BB3 /* SingingHue2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9533162D42E39400D96BB3 /* SingingHue2Tests.swift */,
+			);
+			path = SingingHue2Tests;
+			sourceTree = "<group>";
+		};
+		DA95331F2D42E39400D96BB3 /* SingingHue2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9533202D42E39400D96BB3 /* SingingHue2UITests.swift */,
+				DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */,
+			);
+			path = SingingHue2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9533012D42E39300D96BB3 /* SingingHue2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9533262D42E39400D96BB3 /* Build configuration list for PBXNativeTarget "SingingHue2" */;
+			buildPhases = (
+				DA9532FE2D42E39300D96BB3 /* Sources */,
+				DA9532FF2D42E39300D96BB3 /* Frameworks */,
+				DA9533002D42E39300D96BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingingHue2;
+			productName = SingingHue2;
+			productReference = DA9533022D42E39300D96BB3 /* SingingHue2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA9533112D42E39400D96BB3 /* SingingHue2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9533292D42E39400D96BB3 /* Build configuration list for PBXNativeTarget "SingingHue2Tests" */;
+			buildPhases = (
+				DA95330E2D42E39400D96BB3 /* Sources */,
+				DA95330F2D42E39400D96BB3 /* Frameworks */,
+				DA9533102D42E39400D96BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA9533142D42E39400D96BB3 /* PBXTargetDependency */,
+			);
+			name = SingingHue2Tests;
+			productName = SingingHue2Tests;
+			productReference = DA9533122D42E39400D96BB3 /* SingingHue2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA95331B2D42E39400D96BB3 /* SingingHue2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA95332C2D42E39400D96BB3 /* Build configuration list for PBXNativeTarget "SingingHue2UITests" */;
+			buildPhases = (
+				DA9533182D42E39400D96BB3 /* Sources */,
+				DA9533192D42E39400D96BB3 /* Frameworks */,
+				DA95331A2D42E39400D96BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA95331E2D42E39400D96BB3 /* PBXTargetDependency */,
+			);
+			name = SingingHue2UITests;
+			productName = SingingHue2UITests;
+			productReference = DA95331C2D42E39400D96BB3 /* SingingHue2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9532FA2D42E39300D96BB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DA9533012D42E39300D96BB3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					DA9533112D42E39400D96BB3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DA9533012D42E39300D96BB3;
+					};
+					DA95331B2D42E39400D96BB3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DA9533012D42E39300D96BB3;
+					};
+				};
+			};
+			buildConfigurationList = DA9532FD2D42E39300D96BB3 /* Build configuration list for PBXProject "SingingHue2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA9532F92D42E39300D96BB3;
+			productRefGroup = DA9533032D42E39300D96BB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9533012D42E39300D96BB3 /* SingingHue2 */,
+				DA9533112D42E39400D96BB3 /* SingingHue2Tests */,
+				DA95331B2D42E39400D96BB3 /* SingingHue2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9533002D42E39300D96BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA95330D2D42E39400D96BB3 /* Preview Assets.xcassets in Resources */,
+				DA95330A2D42E39400D96BB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9533102D42E39400D96BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA95331A2D42E39400D96BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9532FE2D42E39300D96BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9533082D42E39300D96BB3 /* ContentView.swift in Sources */,
+				DA9533062D42E39300D96BB3 /* SingingHue2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA95330E2D42E39400D96BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9533172D42E39400D96BB3 /* SingingHue2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9533182D42E39400D96BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9533232D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift in Sources */,
+				DA9533212D42E39400D96BB3 /* SingingHue2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA9533142D42E39400D96BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA9533012D42E39300D96BB3 /* SingingHue2 */;
+			targetProxy = DA9533132D42E39400D96BB3 /* PBXContainerItemProxy */;
+		};
+		DA95331E2D42E39400D96BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA9533012D42E39300D96BB3 /* SingingHue2 */;
+			targetProxy = DA95331D2D42E39400D96BB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA9533242D42E39400D96BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA9533252D42E39400D96BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA9533272D42E39400D96BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SingingHue2/Preview Content\"";
+				DEVELOPMENT_TEAM = 467CNRQYUD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = whateverett.SingingHue2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA9533282D42E39400D96BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SingingHue2/Preview Content\"";
+				DEVELOPMENT_TEAM = 467CNRQYUD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = whateverett.SingingHue2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA95332A2D42E39400D96BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 467CNRQYUD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = whateverett.SingingHue2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingingHue2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SingingHue2";
+			};
+			name = Debug;
+		};
+		DA95332B2D42E39400D96BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 467CNRQYUD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = whateverett.SingingHue2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingingHue2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SingingHue2";
+			};
+			name = Release;
+		};
+		DA95332D2D42E39400D96BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 467CNRQYUD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = whateverett.SingingHue2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingingHue2;
+			};
+			name = Debug;
+		};
+		DA95332E2D42E39400D96BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 467CNRQYUD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = whateverett.SingingHue2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SingingHue2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9532FD2D42E39300D96BB3 /* Build configuration list for PBXProject "SingingHue2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9533242D42E39400D96BB3 /* Debug */,
+				DA9533252D42E39400D96BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9533262D42E39400D96BB3 /* Build configuration list for PBXNativeTarget "SingingHue2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9533272D42E39400D96BB3 /* Debug */,
+				DA9533282D42E39400D96BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9533292D42E39400D96BB3 /* Build configuration list for PBXNativeTarget "SingingHue2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA95332A2D42E39400D96BB3 /* Debug */,
+				DA95332B2D42E39400D96BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA95332C2D42E39400D96BB3 /* Build configuration list for PBXNativeTarget "SingingHue2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA95332D2D42E39400D96BB3 /* Debug */,
+				DA95332E2D42E39400D96BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9532FA2D42E39300D96BB3 /* Project object */;
+}
