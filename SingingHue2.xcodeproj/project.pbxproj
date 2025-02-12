@@ -14,6 +14,7 @@
 		DA9533172D42E39400D96BB3 /* SingingHue2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533162D42E39400D96BB3 /* SingingHue2Tests.swift */; };
 		DA9533212D42E39400D96BB3 /* SingingHue2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533202D42E39400D96BB3 /* SingingHue2UITests.swift */; };
 		DA9533232D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */; };
+		DAF3D4452D5D2E8500D36314 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D4442D5D2E8500D36314 /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		DA95331C2D42E39400D96BB3 /* SingingHue2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingingHue2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9533202D42E39400D96BB3 /* SingingHue2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2UITests.swift; sourceTree = "<group>"; };
 		DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAF3D4442D5D2E8500D36314 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		DAF3D4462D5D3A4800D36314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				DA9533052D42E39300D96BB3 /* SingingHue2App.swift */,
+				DAF3D4462D5D3A4800D36314 /* Info.plist */,
+				DAF3D4442D5D2E8500D36314 /* SpeechRecognizer.swift */,
 				DA9533072D42E39300D96BB3 /* ContentView.swift */,
 				DA9533092D42E39400D96BB3 /* Assets.xcassets */,
 				DA95330B2D42E39400D96BB3 /* Preview Content */,
@@ -259,6 +264,7 @@
 			files = (
 				DA9533082D42E39300D96BB3 /* ContentView.swift in Sources */,
 				DA9533062D42E39300D96BB3 /* SingingHue2App.swift in Sources */,
+				DAF3D4452D5D2E8500D36314 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +431,7 @@
 				DEVELOPMENT_TEAM = 467CNRQYUD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/everettwilson/Library/Mobile Documents/com~apple~CloudDocs/Documents/Xcode/SingingHue2/SingingHue2/SingingHue2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +461,7 @@
 				DEVELOPMENT_TEAM = 467CNRQYUD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/everettwilson/Library/Mobile Documents/com~apple~CloudDocs/Documents/Xcode/SingingHue2/SingingHue2/SingingHue2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

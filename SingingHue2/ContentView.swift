@@ -1,9 +1,13 @@
 import SwiftUI
+import Speech
 
 struct ContentView: View {
     let lightID = "401bddb0-5a93-4eb4-8300-a63c1037c00f" // Your specific light ID
     let bridgeIP = "192.168.4.38" // Your Hue Bridge IP
     let applicationKey = "1-Rl4dWmmyFl6J35qKGgNOHR1tfbNkWrhQuk1CTW" // Replace with your actual key
+    
+    @StateObject private var speechRecognizer = SpeechRecognizer()
+    @State private var isListening = false
 
     @State private var isLightOn: Bool = false
 
@@ -17,8 +21,60 @@ struct ContentView: View {
                     toggleLightState(to: isLightOn)
                 }
                 .padding()
+            Button(isListening ? "Stop Listening" : "Start Listening") {
+                toggleListening()
+            }
+            .padding()
+            .background(isListening ? Color.red : Color.green)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+            
+            Text("Recognized: \(speechRecognizer.recognizedText) ").padding()
+        }
+        .onChange(of: speechRecognizer.recognizedText) { handleSpeechCommand(speechRecognizer.recognizedText)
         }
     }
+    
+    private func handleSpeechCommand(_ text: String) {
+        print("Handling command: \(text)")
+        
+        print("Handling command: \(text)")
+
+        let words = text.lowercased().split(separator: " ")
+        guard let lastWord = words.last else { return }
+
+        if lastWord == "on" {
+            toggleLightState(to: true)
+            //self.isLightOn = true
+        } else if lastWord == "off" {
+            toggleLightState(to: false)
+            //self.isLightOn = false
+        }
+
+        // Keep only the last 1 or 2 words
+//        DispatchQueue.main.async {
+//            self.speechRecognizer.recognizedText = lastWord
+//        }
+        
+//        if text.lowercased().contains("on") {
+//            toggleLightState(to: true)
+//            //self.isLightOn = true
+//        } else if text.lowercased().contains("off") {
+//            toggleLightState(to: false)
+//            //self.isLightOn = false
+//        }
+//        
+//        //Reset recognizedText to avoid handling old words
+//        speechRecognizer.resetRecognizedText()
+    }
+    private func toggleListening() {
+            if isListening {
+                speechRecognizer.stopListening()
+            } else {
+                speechRecognizer.startListening()
+            }
+            isListening.toggle()
+        }
     
     func toggleLightState(to state: Bool) {
         guard let url = URL(string: "https://\(bridgeIP)/clip/v2/resource/light/\(lightID)") else {
@@ -52,7 +108,7 @@ struct ContentView: View {
                 return
             }
             
-            print("Light state toggled successfully")
+            print("Light state toggled successfully to: \(state)")
         }.resume()
     }
 }
@@ -62,5 +118,11 @@ class SSLBypass: NSObject, URLSessionDelegate {
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
         completionHandler(.useCredential, credential)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
