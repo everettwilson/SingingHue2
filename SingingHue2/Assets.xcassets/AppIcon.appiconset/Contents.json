@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "app_icon_from_chatgpt.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
