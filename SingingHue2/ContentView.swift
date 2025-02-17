@@ -2,7 +2,10 @@ import SwiftUI
 import Speech
 
 struct ContentView: View {
-    let lightID = "401bddb0-5a93-4eb4-8300-a63c1037c00f" // Your specific light ID
+    //let lightID = "401bddb0-5a93-4eb4-8300-a63c1037c00f" // Office light
+    let lightID = "a612a8d3-5621-467a-bb11-65d9e9adbfd9" // playroom grouped light
+    //let resourceID = "light" // for single light
+    let resourceID = "grouped_light" // for a group
     let bridgeIP = "192.168.4.38" // Your Hue Bridge IP
     let applicationKey = "1-Rl4dWmmyFl6J35qKGgNOHR1tfbNkWrhQuk1CTW" // Replace with your actual key
     
@@ -77,7 +80,7 @@ struct ContentView: View {
         }
     
     func toggleLightState(to state: Bool) {
-        guard let url = URL(string: "https://\(bridgeIP)/clip/v2/resource/light/\(lightID)") else {
+        guard let url = URL(string: "https://\(bridgeIP)/clip/v2/resource/\(resourceID)/\(lightID)") else {
             print("Invalid URL")
             return
         }
