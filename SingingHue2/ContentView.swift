@@ -2,14 +2,10 @@ import SwiftUI
 import Speech
 
 struct ContentView: View {
-    // Use the grouped light for a room (or group) update.
-    let lightID = "a612a8d3-5621-467a-bb11-65d9e9adbfd9" // Playroom grouped light ID
-    //let resourceID = "light" // for a single light
-    let resourceID = "grouped_light" // for a group
-
-    // These properties are now used only for reference; HueClient handles API details.
-    let bridgeIP = "192.168.4.38"
-    let applicationKey = "1-Rl4dWmmyFl6J35qKGgNOHR1tfbNkWrhQuk1CTW"
+    
+    let playroomLight = Light(lightID: "a612a8d3-5621-467a-bb11-65d9e9adbfd9", type: .group)
+    let officeLight = Light(lightID: "401bddb0-5a93-4eb4-8300-a63c1037c00f", type: .single)
+    
     
     @StateObject private var speechRecognizer = SpeechRecognizer()
     @State private var isListening = false
@@ -64,18 +60,8 @@ struct ContentView: View {
     }
     
     func toggleLightState(to state: Bool) {
-        // If resourceID is for a group, use updateGroupState. Otherwise, update a single light.
-        if resourceID == "grouped_light" {
-            HueClient.shared.updateGroupState(groupID: lightID, isOn: state) { result in
-                switch result {
-                case .success:
-                    print("Group state toggled successfully to: \(state)")
-                case .failure(let error):
-                    print("Error toggling group state: \(error.localizedDescription)")
-                }
-            }
-        } else {
-            HueClient.shared.updateLightState(lightID: lightID, isOn: state) { result in
+      
+        HueClient.shared.updateLightState(light: playroomLight , isOn: state) { result in
                 switch result {
                 case .success:
                     print("Light state toggled successfully to: \(state)")
@@ -83,7 +69,6 @@ struct ContentView: View {
                     print("Error toggling light state: \(error.localizedDescription)")
                 }
             }
-        }
     }
 }
 
