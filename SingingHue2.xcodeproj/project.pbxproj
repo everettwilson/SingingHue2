@@ -19,6 +19,7 @@
 		DAF3D44B2D643D1B00D36314 /* HueClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D44A2D643D1A00D36314 /* HueClient.swift */; };
 		DAF3D44D2D6442DB00D36314 /* SSLBypass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D44C2D6442DB00D36314 /* SSLBypass.swift */; };
 		DAF3D44F2D64ED7500D36314 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D44E2D64ED7500D36314 /* Light.swift */; };
+		DAF3D4512D653DEC00D36314 /* HueColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D4502D653DEC00D36314 /* HueColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DAF3D44A2D643D1A00D36314 /* HueClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueClient.swift; sourceTree = "<group>"; };
 		DAF3D44C2D6442DB00D36314 /* SSLBypass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLBypass.swift; sourceTree = "<group>"; };
 		DAF3D44E2D64ED7500D36314 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		DAF3D4502D653DEC00D36314 /* HueColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		DA9533042D42E39300D96BB3 /* SingingHue2 */ = {
 			isa = PBXGroup;
 			children = (
+				DAF3D4502D653DEC00D36314 /* HueColors.swift */,
 				DAF3D44C2D6442DB00D36314 /* SSLBypass.swift */,
 				DAF3D4482D643B7E00D36314 /* APIClient.swift */,
 				DAF3D44A2D643D1A00D36314 /* HueClient.swift */,
@@ -280,6 +283,7 @@
 				DAF3D4492D643B7E00D36314 /* APIClient.swift in Sources */,
 				DAF3D44D2D6442DB00D36314 /* SSLBypass.swift in Sources */,
 				DAF3D44F2D64ED7500D36314 /* Light.swift in Sources */,
+				DAF3D4512D653DEC00D36314 /* HueColors.swift in Sources */,
 				DAF3D44B2D643D1B00D36314 /* HueClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

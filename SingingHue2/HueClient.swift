@@ -25,7 +25,7 @@ class HueClient {
     // MARK: - Update a single light or light group
     /// Updates the on/off state of a single Philips Hue light.
     /// - Parameters:
-    ///   - lightID: The unique identifier for the light.
+    ///   - light: The light object.
     ///   - isOn: A Boolean indicating whether the light should be on (true) or off (false).
     ///   - completion: Completion handler returning a Result.
     func updateLightState(light: Light, isOn: Bool, completion: @escaping (Result<Void, Error>) -> Void) {
@@ -41,6 +41,48 @@ class HueClient {
         ]
         
         // Convert payload to JSON data.
+        guard let body = try? JSONSerialization.data(withJSONObject: payload, options: []) else {
+            completion(.failure(HueError.invalidPayload))
+            return
+        }
+        
+        // Set up the required headers.
+        let headers = [
+            "Content-Type": "application/json",
+            "hue-application-key": applicationKey
+        ]
+        
+        // Use the generic APIClient to send the PUT request.
+        APIClient.shared.request(url: url, httpMethod: "PUT", headers: headers, body: body) { (result: Result<Data, Error>) in
+            switch result {
+            case .success:
+                completion(.success(()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func updateLightColor(light: Light, color: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        // Look up the xy values for the given color name.
+        guard let xyValues = HueColors.mapping[color.lowercased()] else {
+            completion(.failure(HueError.invalidPayload)) // Or create a custom error for "color not found"
+            return
+        }
+        
+        // Construct the URL using the light's resource type and lightID.
+        guard let url = URL(string: "https://\(bridgeIP)/clip/v2/resource/\(light.resourceType)/\(light.lightID)") else {
+            completion(.failure(HueError.invalidURL))
+            return
+        }
+        
+        // Build the payload with a fixed brightness and the color's xy coordinates.
+        let payload: [String: Any] = [
+            //"dimming": ["brightness": 100.0],
+            "color": ["xy": ["x": xyValues.x, "y": xyValues.y]]
+        ]
+        
+        // Convert the payload to JSON data.
         guard let body = try? JSONSerialization.data(withJSONObject: payload, options: []) else {
             completion(.failure(HueError.invalidPayload))
             return

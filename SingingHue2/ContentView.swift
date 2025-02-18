@@ -53,6 +53,8 @@ struct ContentView: View {
             toggleLightState(to: true)
         } else if lastWord == "off" {
             toggleLightState(to: false)
+        } else if HueColors.mapping[String(lastWord)] != nil {
+            updateLightColorCommand(to: String(lastWord))
         }
     }
     
@@ -75,6 +77,17 @@ struct ContentView: View {
                     print("Error toggling light state: \(error.localizedDescription)")
                 }
             }
+    }
+    
+    func updateLightColorCommand(to color: String) {
+        HueClient.shared.updateLightColor(light: currentLight, color: color) { result in
+            switch result {
+            case .success:
+                print("\(color.capitalized) color applied successfully")
+            case .failure(let error):
+                print("Error updating light color: \(error.localizedDescription)")
+            }
+        }
     }
 }
 
