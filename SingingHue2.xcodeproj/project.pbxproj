@@ -15,6 +15,9 @@
 		DA9533212D42E39400D96BB3 /* SingingHue2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533202D42E39400D96BB3 /* SingingHue2UITests.swift */; };
 		DA9533232D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */; };
 		DAF3D4452D5D2E8500D36314 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D4442D5D2E8500D36314 /* SpeechRecognizer.swift */; };
+		DAF3D4492D643B7E00D36314 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D4482D643B7E00D36314 /* APIClient.swift */; };
+		DAF3D44B2D643D1B00D36314 /* HueClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D44A2D643D1A00D36314 /* HueClient.swift */; };
+		DAF3D44D2D6442DB00D36314 /* SSLBypass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3D44C2D6442DB00D36314 /* SSLBypass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DA9533222D42E39400D96BB3 /* SingingHue2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingHue2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DAF3D4442D5D2E8500D36314 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		DAF3D4462D5D3A4800D36314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF3D4482D643B7E00D36314 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DAF3D44A2D643D1A00D36314 /* HueClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueClient.swift; sourceTree = "<group>"; };
+		DAF3D44C2D6442DB00D36314 /* SSLBypass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLBypass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		DA9533042D42E39300D96BB3 /* SingingHue2 */ = {
 			isa = PBXGroup;
 			children = (
+				DAF3D44C2D6442DB00D36314 /* SSLBypass.swift */,
+				DAF3D4482D643B7E00D36314 /* APIClient.swift */,
+				DAF3D44A2D643D1A00D36314 /* HueClient.swift */,
 				DA9533052D42E39300D96BB3 /* SingingHue2App.swift */,
 				DAF3D4462D5D3A4800D36314 /* Info.plist */,
 				DAF3D4442D5D2E8500D36314 /* SpeechRecognizer.swift */,
@@ -265,6 +274,9 @@
 				DA9533082D42E39300D96BB3 /* ContentView.swift in Sources */,
 				DA9533062D42E39300D96BB3 /* SingingHue2App.swift in Sources */,
 				DAF3D4452D5D2E8500D36314 /* SpeechRecognizer.swift in Sources */,
+				DAF3D4492D643B7E00D36314 /* APIClient.swift in Sources */,
+				DAF3D44D2D6442DB00D36314 /* SSLBypass.swift in Sources */,
+				DAF3D44B2D643D1B00D36314 /* HueClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
